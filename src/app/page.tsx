@@ -33,9 +33,18 @@ export default function Home() {
       <div className="bg-gray-100 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
         <div className="container mx-auto px-4 py-2">
           <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
-            <img src="/us-flag.png" alt="US Flag" className="w-4 h-3" onError={(e) => {
-              (e.target as HTMLImageElement).style.display = 'none';
-            }} />
+            <div className="w-4 h-3 flex-shrink-0">
+              <img
+                src="/us-flag.png"
+                alt="US Flag"
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  target.parentElement!.innerHTML = '🇺🇸';
+                }}
+              />
+            </div>
             <span className="font-medium">An official website of the United States government</span>
             <span className="text-blue-600 dark:text-blue-400">Here's how you know</span>
           </div>
@@ -50,14 +59,18 @@ export default function Home() {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center gap-4 mb-8">
-            <img
-              src="/fbi-cde-logo.png"
-              alt="FBI CDE Logo"
-              className="h-16 w-auto"
-              onError={(e) => {
-                (e.target as HTMLImageElement).style.display = 'none';
-              }}
-            />
+            <div className="h-16 flex items-center">
+              <img
+                src="/fbi-cde-logo.png"
+                alt="FBI CDE Logo"
+                className="h-16 w-auto"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  target.parentElement!.innerHTML = '<div class="h-16 w-16 bg-blue-600 rounded flex items-center justify-center text-white font-bold text-xl">FBI</div>';
+                }}
+              />
+            </div>
             <div className="text-center">
               <h1 className="text-4xl font-bold text-gray-800 dark:text-white mb-2">
                 FBI Crime Data Explorer
