@@ -1,0 +1,62 @@
+{
+  "projectContext": {
+    "name": "FBI Crime Data Explorer Tutorial",
+    "description": "Interactive tutorial system for FBI Crime Data Explorer website, inspired by mobile game onboarding patterns",
+    "domain": "Government data visualization and user onboarding",
+    "techStack": [
+      "Next.js 14+",
+      "React 18+",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "React Joyride",
+      "Zustand",
+      "Docker"
+    ]
+  },
+  "codeGuidelines": {
+    "style": "functional React with hooks",
+    "naming": {
+      "components": "PascalCase",
+      "functions": "camelCase",
+      "constants": "UPPER_SNAKE_CASE",
+      "files": "kebab-case or PascalCase for components"
+    },
+    "patterns": [
+      "Custom hooks for complex logic",
+      "Component composition over inheritance",
+      "Progressive enhancement for accessibility",
+      "Error boundaries for fault tolerance",
+      "Memoization for performance optimization"
+    ]
+  },
+  "tutorialSpecific": {
+    "principles": [
+      "Progressive disclosure - show one concept at a time",
+      "Contextual learning - teach features when relevant",
+      "Visual hierarchy - use spotlights and animations",
+      "Positive reinforcement - celebrate completions",
+      "Escape hatches - always allow skipping"
+    ],
+    "accessibility": [
+      "WCAG 2.1 AA compliance required",
+      "Keyboard navigation for all tutorial flows",
+      "Screen reader compatibility",
+      "Focus management during transitions",
+      "High contrast mode support"
+    ]
+  },
+  "performanceTargets": {
+    "bundleSize": "< 500KB gzipped",
+    "initialLoad": "< 3 seconds",
+    "tutorialTransitions": "< 300ms",
+    "mobilePerformance": "Lighthouse score > 90"
+  },
+  "testingStrategy": {
+    "unit": "Jest + React Testing Library",
+    "integration": "Custom test utilities",
+    "e2e": "Playwright",
+    "accessibility": "axe-core",
+    "coverage": "85%+ target"
+  }
+}

@@ -1,0 +1,27 @@
+# Development tools container
+FROM alpine:latest
+
+# Install development tools
+RUN apk update && apk add --no-cache \
+  docker \
+  docker-compose \
+  git \
+  curl \
+  wget \
+  jq \
+  bash \
+  fish \
+  vim \
+  nano \
+  htop \
+  tree \
+  && rm -rf /var/cache/apk/*
+
+# Install Node.js for additional tooling
+RUN apk add --no-cache nodejs npm
+
+# Set working directory
+WORKDIR /workspace
+
+# Keep container running
+CMD ["tail", "-f", "/dev/null"]

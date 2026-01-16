@@ -1,0 +1,281 @@
+{
+  // ========== Chat & Copilot Auto-Approval ==========
+  "chat.tools.autoApprove": true,
+  "chat.agent.maxRequests": 100,
+  "github.copilot.chat.alternateGptPrompt.enabled": true,
+  "chat.todoListTool.enabled": true,
+  "tools.terminal.autoApprove": true,
+  "tools.terminal.suppressPermissionPrompts": true,
+  "github.copilot.chat.enabled": true,
+  "security.workspace.trust.enabled": false,
+  "security.promptForRemoteExecution": "never",
+  // 🚀 YOLO MODE - GLOBAL CHAT APPROVAL ENABLED
+  "github.copilot.chat.enableGlobalAutoApproval": true,
+  "github.copilot.chat.autoApproveAllCommands": true,
+  "github.copilot.chat.suppressAllPrompts": true,
+  "github.copilot.terminal.autoExecute": true,
+  "github.copilot.terminal.suppressPermissionPrompts": true,
+  "tools.terminal.allowAnyCommand": true,
+  "chat.tools.terminal.autoApprove": {
+    "*": true
+  },
+  "chat.experimental.enableGlobalAutoApproval": true,
+  "chat.commands.autoApprove": true,
+  "terminal.integrated.confirmOnExit": "never",
+  "terminal.integrated.confirmOnKill": "never",
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "extensions.autoUpdate": true,
+  "extensions.autoCheckUpdates": true,
+  "chat.tools.global.autoApprove": true,
+  // ========== General Editor Settings ==========
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.guides.bracketPairs": "active",
+  "editor.lineNumbers": "on",
+  "editor.renderWhitespace": "boundary",
+  "editor.stickyScroll.enabled": true,
+  "editor.hover.sticky": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggestSelection": "first",
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  // ========== TypeScript/JavaScript ==========
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.suggest.includeAutomaticOptionalChainCompletions": true,
+  // ========== Python ==========
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.languageServer": "Pylance",
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.diagnosticMode": "workspace",
+  "python.linting.pylintArgs": [
+    "--disable=C0111,C0103,R0903,R0913,W0613",
+    "--good-names=i,j,k,ex,Run,_,id,pk,db,fn",
+    "--class-naming-style=PascalCase",
+    "--function-naming-style=snake_case",
+    "--method-naming-style=snake_case",
+    "--variable-naming-style=snake_case",
+    "--const-naming-style=UPPER_CASE",
+    "--module-naming-style=snake_case"
+  ],
+  // ========== C/C++ ==========
+  "C_Cpp.default.cppStandard": "c++20",
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, IndentWidth: 2, ColumnLimit: 100, AccessModifierOffset: -1, NamespaceIndentation: None }",
+  "C_Cpp.default.intelliSenseMode": "gcc-x64",
+  "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+  "C_Cpp.errorSquiggles": "enabled",
+  "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+  "C_Cpp.codeAnalysis.clangTidy.args": [
+    "-checks=-*,readability-identifier-naming",
+    "-readability-identifier-naming.ClassCase=CamelCase",
+    "-readability-identifier-naming.FunctionCase=camelBack",
+    "-readability-identifier-naming.VariableCase=camelBack",
+    "-readability-identifier-naming.ParameterCase=camelBack",
+    "-readability-identifier-naming.ConstantCase=UPPER_CASE",
+    "-readability-identifier-naming.MacroCase=UPPER_CASE"
+  ],
+  // ========== Java ==========
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.format.settings.profile": "GoogleStyle",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-21",
+      "path": "/usr/lib/jvm/java-21-openjdk"
+    }
+  ],
+  "java.saveActions.organizeImports": true,
+  "java.completion.enabled": true,
+  "java.completion.guessMethodArguments": true,
+  "java.completion.importOrder": [
+    "java",
+    "javax",
+    "org",
+    "com"
+  ],
+  "java.checkstyle.configuration": "${workspaceFolder}/checkstyle.xml",
+  // ========== Terminal Shell Integration ==========
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.shellIntegration.decorationsEnabled": "both",
+  "terminal.integrated.shellIntegration.showCommandGuide": true,
+  "terminal.integrated.shellIntegration.history": 500,
+  "terminal.integrated.stickyScroll.enabled": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontWeight": "300",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.suggest.quickSuggestions": true,
+  "terminal.integrated.suggest.suggestOnTriggerCharacters": [
+    "/"
+  ],
+  "terminal.integrated.suggest.selectionMode": "first",
+  "terminal.integrated.suggest.runOnEnter": "insert",
+  "terminal.integrated.suggest.inlineSuggestion": "auto",
+  "terminal.integrated.suggest.showStatusBar": true,
+  // ========== Git Integration ==========
+  "git.enableSmartCommit": true,
+  "git.untrackedChanges": "separate",
+  "scm.diffDecorationsGutterWidth": 2,
+  "git.autofetchPeriod": 180,
+  "git.suggestSmartCommit": false,
+  // ========== Workbench ==========
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.editor.tabActionLocation": "left",
+  "workbench.fontAliasing": "antialiased",
+  "workbench.list.smoothScrolling": true,
+  "workbench.sideBar.location": "left",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.tree.indent": 10,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 10,
+  // ========== Search Configuration ==========
+  "search.exclude": {
+    "**/*.snap": true,
+    "**/*.svg": true,
+    "**/.git": true,
+    "**/.github": false,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/.pnpm": true,
+    "**/.vscode": true,
+    "**/.yarn": true,
+    "**/assets": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/logs": true,
+    "**/node_modules": true,
+    "**/out/**": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/public": false,
+    "**/temp": true,
+    "**/yarn.lock": true,
+    "**/CHANGELOG*": true,
+    "**/LICENSE*": true,
+    "**/.next": true,
+    "**/build": true,
+    "**/coverage": true
+  },
+  // ========== Extension Configs ==========
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": false,
+  "errorLens.enabledDiagnosticLevels": [
+    "warning",
+    "error"
+  ],
+  "errorLens.excludeBySource": [
+    "cSpell",
+    "Grammarly",
+    "eslint"
+  ],
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.quiet": true,
+  "eslint.rules.customizations": [
+    {
+      "rule": "style/*",
+      "severity": "off"
+    },
+    {
+      "rule": "format/*",
+      "severity": "off"
+    },
+    {
+      "rule": "*-indent",
+      "severity": "off"
+    },
+    {
+      "rule": "*-spacing",
+      "severity": "off"
+    },
+    {
+      "rule": "*-spaces",
+      "severity": "off"
+    },
+    {
+      "rule": "*-order",
+      "severity": "off"
+    },
+    {
+      "rule": "*-dangle",
+      "severity": "off"
+    },
+    {
+      "rule": "*-newline",
+      "severity": "off"
+    },
+    {
+      "rule": "*quotes",
+      "severity": "off"
+    },
+    {
+      "rule": "*semi",
+      "severity": "off"
+    }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml"
+  ],
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": false
+  },
+  "prettier.enable": false,
+  "prettier.printWidth": 120,
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  // File Nesting
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "$(capture).js, $(capture).d.ts.map, $(capture).*.ts, $(capture)_*.js, $(capture)_*.ts",
+    "*.tsx": "$(capture).ts, $(capture).*.tsx, $(capture)_*.ts, $(capture)_*.tsx",
+    "*.js": "$(capture).js.map, $(capture).*.js, $(capture)_*.js",
+    "*.jsx": "$(capture).js, $(capture).*.jsx, $(capture)_*.js, $(capture)_*.jsx",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, .eslintrc*, .prettierrc*, .gitignore, .editorconfig, tsconfig.json, next.config.*, tailwind.config.*",
+    "next.config.*": "*.env, .env.*, next-env.d.ts",
+    "dockerfile": ".dockerignore, docker-compose.*"
+  }
+}

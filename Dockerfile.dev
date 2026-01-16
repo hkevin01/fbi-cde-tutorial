@@ -1,0 +1,47 @@
+# Development Dockerfile with hot reloading
+FROM node:20-alpine AS base
+
+# Install system dependencies
+RUN apk update && apk add --no-cache \
+  git \
+  curl \
+  python3 \
+  py3-pip \
+  python3-dev \
+  build-base \
+  && rm -rf /var/cache/apk/*
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm ci --legacy-peer-deps
+
+# Development stage
+FROM base AS development
+
+# Create Python virtual environment
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+
+# Install Python development dependencies
+RUN pip install --upgrade pip && \
+  pip install pytest black pylint flake8 mypy
+
+# Copy source code (will be overridden by volume in docker-compose)
+COPY . .
+
+# Set environment variables for development
+ENV NODE_ENV=development
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV WATCHPACK_POLLING=true
+ENV CHOKIDAR_USEPOLLING=true
+
+# Expose ports
+EXPOSE 3000 9229
+
+# Development command with hot reloading
+CMD ["npm", "run", "dev"]

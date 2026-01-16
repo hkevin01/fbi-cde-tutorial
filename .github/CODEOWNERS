@@ -1,0 +1,49 @@
+# Global ownership - all files require review
+* @project-maintainers
+
+# Core tutorial system
+/src/components/tutorial/ @tutorial-team
+/src/lib/tutorial/ @tutorial-team
+
+# Mock FBI CDE interface
+/src/components/explorer/ @interface-team
+
+# Documentation
+/docs/ @documentation-team
+/memory-bank/ @architecture-team
+
+# Configuration files
+/.vscode/ @devtools-team
+/docker/ @infrastructure-team
+*.json @configuration-team
+*.config.* @configuration-team
+
+# Security and compliance
+/.github/SECURITY.md @security-team
+/.github/CODEOWNERS @project-maintainers
+
+# Testing
+/tests/ @qa-team
+/__tests__/ @qa-team
+*.test.* @qa-team
+*.spec.* @qa-team
+
+# Build and deployment
+/scripts/ @infrastructure-team
+Dockerfile @infrastructure-team
+docker-compose.* @infrastructure-team
+
+# Package management
+package.json @dependency-team
+package-lock.json @dependency-team
+
+# TypeScript configuration
+tsconfig.json @typescript-team
+
+# Styling and design
+/src/styles/ @design-team
+tailwind.config.js @design-team
+
+# Environment and configuration
+.env.* @security-team
+.gitignore @configuration-team

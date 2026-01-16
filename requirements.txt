@@ -1,0 +1,30 @@
+# Python requirements for FBI CDE Tutorial
+# Data analysis and processing
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
+
+# Web scraping and API interaction
+requests>=2.28.0
+beautifulsoup4>=4.11.0
+urllib3>=1.26.0
+
+# Development and testing
+pytest>=7.2.0
+black>=22.12.0
+pylint>=2.15.0
+flake8>=6.0.0
+mypy>=1.0.0
+
+# Jupyter notebook support
+jupyter>=1.0.0
+ipykernel>=6.20.0
+
+# Data validation
+cerberus>=1.3.0
+jsonschema>=4.17.0
+
+# Performance monitoring
+psutil>=5.9.0
+memory-profiler>=0.60.0

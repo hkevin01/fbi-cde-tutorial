@@ -1,0 +1,46 @@
+# Python environment for data processing and scripts
+FROM python:3.11-alpine
+
+# Install system dependencies
+RUN apk update && apk add --no-cache \
+  build-base \
+  gcc \
+  musl-dev \
+  libffi-dev \
+  && rm -rf /var/cache/apk/*
+
+# Set working directory
+WORKDIR /app
+
+# Create and activate virtual environment
+RUN python -m venv /app/venv
+ENV PATH="/app/venv/bin:$PATH"
+
+# Install Python packages for data analysis and visualization
+RUN pip install --upgrade pip && \
+  pip install \
+  pandas \
+  numpy \
+  matplotlib \
+  seaborn \
+  jupyter \
+  pytest \
+  black \
+  pylint \
+  flake8 \
+  mypy \
+  requests \
+  beautifulsoup4
+
+# Copy Python scripts and requirements if they exist
+COPY scripts/ ./scripts/
+COPY requirements.txt ./requirements.txt
+
+# Install additional requirements if file exists
+RUN if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+# Set Python path
+ENV PYTHONPATH=/app
+
+# Keep container running
+CMD ["tail", "-f", "/dev/null"]
