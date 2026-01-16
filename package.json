@@ -6,12 +6,33 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:e2e": "playwright test",
+    "type-check": "tsc --noEmit",
+    "docker:dev": "./scripts/dev-start.sh",
+    "docker:stop": "./scripts/dev-stop.sh",
+    "docker:logs": "./scripts/dev-logs.sh",
+    "docker:reset": "./scripts/dev-reset.sh",
+    "docker:build": "docker build -t fbi-cde-tutorial:latest .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "analyze": "ANALYZE=true npm run build"
   },
   "dependencies": {
+    "@floating-ui/react": "^0.27.16",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.26.2",
+    "lucide-react": "^0.562.0",
     "next": "16.1.2",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "react-joyride": "^2.9.3",
+    "recharts": "^3.6.0",
+    "tailwind-merge": "^3.4.0",
+    "zustand": "^5.0.10"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
