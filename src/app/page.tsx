@@ -1,6 +1,7 @@
 "use client";
 
 import { CrimeDataDashboard } from "@/components/dashboard/CrimeDataDashboard";
+import { PoliceDog } from "@/components/tutorial/PoliceDog";
 import { TutorialProvider } from "@/components/tutorial/TutorialProvider";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -22,6 +23,12 @@ export default function Home() {
       <TutorialProvider enabled={tutorialStarted}>
         <div className="min-h-screen bg-white dark:bg-gray-900">
           <CrimeDataDashboard />
+          <PoliceDog
+            visible={true}
+            message="Great! Now let's explore the FBI Crime Data Explorer together! Click on elements highlighted in blue!"
+            mood="focused"
+            onInteraction={() => console.log('Tutorial police dog interaction!')}
+          />
         </div>
       </TutorialProvider>
     );
@@ -205,6 +212,14 @@ export default function Home() {
           </Card>
         </motion.div>
       </div>
+
+      {/* Interactive Police Dog */}
+      <PoliceDog
+        visible={!tutorialStarted}
+        message="Woof! I'm Officer Rex! Click 'Start Interactive Tutorial' and I'll guide you through the FBI Crime Data Explorer! 🐕‍🦺"
+        mood="excited"
+        onInteraction={() => console.log('Police dog interaction!')}
+      />
     </div>
   );
 }
