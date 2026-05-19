@@ -173,17 +173,17 @@ mindmap
 
 ### Core Technologies & Decision Matrix
 
-| Technology        | Purpose            | Why Chosen                                                                                                                    | Alternatives Considered                 | Decision Factors                                                                                                    |
+| <sub>Technology</sub> | <sub>Purpose</sub> | <sub>Why Chosen</sub> | <sub>Alternatives Considered</sub> | <sub>Decision Factors</sub> |
 | ----------------- | ------------------ | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| **Next.js 14+**   | React Framework    | • App Router for modern architecture<br>• Server Components for performance<br>• Built-in optimizations<br>• Production-ready | Vite, Create React App, Remix           | • SEO requirements<br>• Performance needs<br>• SSR capabilities<br>• Developer experience                           |
-| **React 19**      | UI Library         | • Concurrent features<br>• Automatic batching<br>• Suspense improvements<br>• Better TypeScript support                       | Vue 3, Angular, Svelte                  | • FBI contractor familiarity<br>• Ecosystem maturity<br>• Tutorial library support<br>• Performance characteristics |
-| **TypeScript**    | Type Safety        | • Reduced runtime errors<br>• Better developer experience<br>• IDE support<br>• Team collaboration                            | JavaScript, Flow, ReScript              | • Government code quality standards<br>• Long-term maintainability<br>• Error prevention<br>• Documentation value   |
-| **Tailwind CSS**  | Styling            | • Utility-first approach<br>• Consistent design system<br>• Small bundle size<br>• FBI color palette support                  | Styled Components, CSS Modules, Emotion | • Rapid development<br>• Design consistency<br>• Bundle optimization<br>• Government accessibility                  |
-| **React Joyride** | Tutorial Engine    | • Mature tutorial library<br>• Accessibility features<br>• Customizable styling<br>• Step progression control                 | Intro.js, Driver.js, Shepherd.js        | • Accessibility compliance<br>• Government UI standards<br>• Customization depth<br>• Active maintenance            |
-| **Framer Motion** | Animations         | • Production-grade animations<br>• Gesture support<br>• Layout animations<br>• Performance optimized                          | React Spring, React Transition Group    | • Professional feel<br>• Performance optimization<br>• Government polish standards<br>• Mobile responsiveness       |
-| **Zustand**       | State Management   | • Minimal boilerplate<br>• TypeScript friendly<br>• Small bundle size<br>• Easy testing                                       | Redux Toolkit, Jotai, Valtio            | • Learning curve<br>• Bundle size concerns<br>• Development speed<br>• Testing simplicity                           |
-| **Recharts**      | Data Visualization | • React-native integration<br>• Responsive by default<br>• FBI chart requirements<br>• Accessibility features                 | D3.js, Chart.js, Victory                | • React integration<br>• Accessibility compliance<br>• FBI data visualization needs<br>• Maintenance overhead       |
-| **Docker**        | Containerization   | • Consistent environments<br>• Easy deployment<br>• Dependency isolation<br>• CI/CD integration                               | Vagrant, Native development             | • Environment consistency<br>• Contractor onboarding<br>• Deployment reliability<br>• Security isolation            |
+| <sub>**Next.js 14+**</sub> | <sub>React Framework</sub> | <sub>• App Router for modern architecture<br>• Server Components for performance<br>• Built-in optimizations<br>• Production-ready</sub> | <sub>Vite, Create React App, Remix</sub> | <sub>• SEO requirements<br>• Performance needs<br>• SSR capabilities<br>• Developer experience</sub> |
+| <sub>**React 19**</sub> | <sub>UI Library</sub> | <sub>• Concurrent features<br>• Automatic batching<br>• Suspense improvements<br>• Better TypeScript support</sub> | <sub>Vue 3, Angular, Svelte</sub> | <sub>• FBI contractor familiarity<br>• Ecosystem maturity<br>• Tutorial library support<br>• Performance characteristics</sub> |
+| <sub>**TypeScript**</sub> | <sub>Type Safety</sub> | <sub>• Reduced runtime errors<br>• Better developer experience<br>• IDE support<br>• Team collaboration</sub> | <sub>JavaScript, Flow, ReScript</sub> | <sub>• Government code quality standards<br>• Long-term maintainability<br>• Error prevention<br>• Documentation value</sub> |
+| <sub>**Tailwind CSS**</sub> | <sub>Styling</sub> | <sub>• Utility-first approach<br>• Consistent design system<br>• Small bundle size<br>• FBI color palette support</sub> | <sub>Styled Components, CSS Modules, Emotion</sub> | <sub>• Rapid development<br>• Design consistency<br>• Bundle optimization<br>• Government accessibility</sub> |
+| <sub>**React Joyride**</sub> | <sub>Tutorial Engine</sub> | <sub>• Mature tutorial library<br>• Accessibility features<br>• Customizable styling<br>• Step progression control</sub> | <sub>Intro.js, Driver.js, Shepherd.js</sub> | <sub>• Accessibility compliance<br>• Government UI standards<br>• Customization depth<br>• Active maintenance</sub> |
+| <sub>**Framer Motion**</sub> | <sub>Animations</sub> | <sub>• Production-grade animations<br>• Gesture support<br>• Layout animations<br>• Performance optimized</sub> | <sub>React Spring, React Transition Group</sub> | <sub>• Professional feel<br>• Performance optimization<br>• Government polish standards<br>• Mobile responsiveness</sub> |
+| <sub>**Zustand**</sub> | <sub>State Management</sub> | <sub>• Minimal boilerplate<br>• TypeScript friendly<br>• Small bundle size<br>• Easy testing</sub> | <sub>Redux Toolkit, Jotai, Valtio</sub> | <sub>• Learning curve<br>• Bundle size concerns<br>• Development speed<br>• Testing simplicity</sub> |
+| <sub>**Recharts**</sub> | <sub>Data Visualization</sub> | <sub>• React-native integration<br>• Responsive by default<br>• FBI chart requirements<br>• Accessibility features</sub> | <sub>D3.js, Chart.js, Victory</sub> | <sub>• React integration<br>• Accessibility compliance<br>• FBI data visualization needs<br>• Maintenance overhead</sub> |
+| <sub>**Docker**</sub> | <sub>Containerization</sub> | <sub>• Consistent environments<br>• Easy deployment<br>• Dependency isolation<br>• CI/CD integration</sub> | <sub>Vagrant, Native development</sub> | <sub>• Environment consistency<br>• Contractor onboarding<br>• Deployment reliability<br>• Security isolation</sub> |
 
 ### Mathematical Performance Models
 
@@ -275,14 +275,14 @@ That's it! No Node.js, Python, or other dependencies needed on your host machine
 
 ## 📋 Development Commands
 
-| Command                        | Description                   | Performance Impact |
+| <sub>Command</sub> | <sub>Description</sub> | <sub>Performance Impact</sub> |
 | ------------------------------ | ----------------------------- | ------------------ |
-| `./scripts/dev-start.sh`       | Start development environment | Initial: 30-45s    |
-| `./scripts/dev-stop.sh`        | Stop development environment  | Immediate          |
-| `./scripts/dev-logs.sh`        | View application logs         | Real-time          |
-| `./scripts/dev-logs.sh app`    | View only app logs            | Filtered output    |
-| `./scripts/dev-logs.sh python` | View Python environment logs  | Separate stream    |
-| `./scripts/dev-reset.sh`       | Reset entire environment      | 60-90s full reset  |
+| <sub>`./scripts/dev-start.sh`</sub> | <sub>Start development environment</sub> | <sub>Initial: 30-45s</sub> |
+| <sub>`./scripts/dev-stop.sh`</sub> | <sub>Stop development environment</sub> | <sub>Immediate</sub> |
+| <sub>`./scripts/dev-logs.sh`</sub> | <sub>View application logs</sub> | <sub>Real-time</sub> |
+| <sub>`./scripts/dev-logs.sh app`</sub> | <sub>View only app logs</sub> | <sub>Filtered output</sub> |
+| <sub>`./scripts/dev-logs.sh python`</sub> | <sub>View Python environment logs</sub> | <sub>Separate stream</sub> |
+| <sub>`./scripts/dev-reset.sh`</sub> | <sub>Reset entire environment</sub> | <sub>60-90s full reset</sub> |
 
 ## 📦 Container Architecture
 
@@ -312,11 +312,11 @@ sequenceDiagram
 
 ### Container Specifications
 
-| Service        | Base Image         | Purpose             | Resource Allocation | Dependencies                     |
+| <sub>Service</sub> | <sub>Base Image</sub> | <sub>Purpose</sub> | <sub>Resource Allocation</sub> | <sub>Dependencies</sub> |
 | -------------- | ------------------ | ------------------- | ------------------- | -------------------------------- |
-| **app**        | `node:20-alpine`   | Next.js Application | 2GB RAM, 1 CPU      | React, TypeScript, Tailwind      |
-| **python-env** | `python:3.11-slim` | Data Analysis       | 1GB RAM, 0.5 CPU    | pandas, numpy, matplotlib        |
-| **tools**      | `ubuntu:22.04`     | Development Tools   | 512MB RAM, 0.25 CPU | git, curl, development utilities |
+| <sub>**app**</sub> | <sub>`node:20-alpine`</sub> | <sub>Next.js Application</sub> | <sub>2GB RAM, 1 CPU</sub> | <sub>React, TypeScript, Tailwind</sub> |
+| <sub>**python-env**</sub> | <sub>`python:3.11-slim`</sub> | <sub>Data Analysis</sub> | <sub>1GB RAM, 0.5 CPU</sub> | <sub>pandas, numpy, matplotlib</sub> |
+| <sub>**tools**</sub> | <sub>`ubuntu:22.04`</sub> | <sub>Development Tools</sub> | <sub>512MB RAM, 0.25 CPU</sub> | <sub>git, curl, development utilities</sub> |
 
 ## 🎨 Project Features & Implementation Details
 
@@ -404,15 +404,15 @@ const calculateLearningEfficiency = (metrics: ProgressMetrics): number => {
 
 #### Bundle Analysis Results
 
-| Component Category     | Size (Gzipped) | Load Priority | Optimization Strategy                    |
+| <sub>Component Category</sub> | <sub>Size (Gzipped)</sub> | <sub>Load Priority</sub> | <sub>Optimization Strategy</sub> |
 | ---------------------- | -------------- | ------------- | ---------------------------------------- |
-| **Core Framework**     | 125KB          | Critical      | Server Components where possible         |
-| **Tutorial Engine**    | 85KB           | High          | Code splitting by tutorial step          |
-| **UI Components**      | 45KB           | Medium        | Tree shaking + dynamic imports           |
-| **Animations**         | 35KB           | Low           | Lazy loading for non-critical animations |
-| **FBI Interface**      | 95KB           | High          | Progressive enhancement                  |
-| **Data Visualization** | 110KB          | Medium        | Dynamic import on chart interaction      |
-| **Total Bundle**       | 495KB          | -             | Under 500KB target achieved              |
+| <sub>**Core Framework**</sub> | <sub>125KB</sub> | <sub>Critical</sub> | <sub>Server Components where possible</sub> |
+| <sub>**Tutorial Engine**</sub> | <sub>85KB</sub> | <sub>High</sub> | <sub>Code splitting by tutorial step</sub> |
+| <sub>**UI Components**</sub> | <sub>45KB</sub> | <sub>Medium</sub> | <sub>Tree shaking + dynamic imports</sub> |
+| <sub>**Animations**</sub> | <sub>35KB</sub> | <sub>Low</sub> | <sub>Lazy loading for non-critical animations</sub> |
+| <sub>**FBI Interface**</sub> | <sub>95KB</sub> | <sub>High</sub> | <sub>Progressive enhancement</sub> |
+| <sub>**Data Visualization**</sub> | <sub>110KB</sub> | <sub>Medium</sub> | <sub>Dynamic import on chart interaction</sub> |
+| <sub>**Total Bundle**</sub> | <sub>495KB</sub> | <sub>-</sub> | <sub>Under 500KB target achieved</sub> |
 
 #### Performance Monitoring Implementation
 
@@ -511,13 +511,13 @@ fbi-cde-tutorial/
 
 ### Government Security Standards
 
-| Security Layer              | Implementation                                 | Compliance Standard         | Validation Method           |
+| <sub>Security Layer</sub> | <sub>Implementation</sub> | <sub>Compliance Standard</sub> | <sub>Validation Method</sub> |
 | --------------------------- | ---------------------------------------------- | --------------------------- | --------------------------- |
-| **Input Sanitization**      | XSS prevention, SQL injection protection       | OWASP Top 10                | Automated security scanning |
-| **Content Security Policy** | Strict CSP headers, nonce-based inline scripts | NIST guidelines             | Header validation tests     |
-| **Authentication**          | JWT tokens, session management                 | FIPS 140-2 Level 2          | Security audit              |
-| **Data Handling**           | No sensitive data storage, mock data only      | FBI data handling protocols | Manual review               |
-| **Container Security**      | Non-root user, minimal attack surface          | CIS Docker Benchmark        | Container scanning          |
+| <sub>**Input Sanitization**</sub> | <sub>XSS prevention, SQL injection protection</sub> | <sub>OWASP Top 10</sub> | <sub>Automated security scanning</sub> |
+| <sub>**Content Security Policy**</sub> | <sub>Strict CSP headers, nonce-based inline scripts</sub> | <sub>NIST guidelines</sub> | <sub>Header validation tests</sub> |
+| <sub>**Authentication**</sub> | <sub>JWT tokens, session management</sub> | <sub>FIPS 140-2 Level 2</sub> | <sub>Security audit</sub> |
+| <sub>**Data Handling**</sub> | <sub>No sensitive data storage, mock data only</sub> | <sub>FBI data handling protocols</sub> | <sub>Manual review</sub> |
+| <sub>**Container Security**</sub> | <sub>Non-root user, minimal attack surface</sub> | <sub>CIS Docker Benchmark</sub> | <sub>Container scanning</sub> |
 
 ### Privacy & Data Protection
 
@@ -545,14 +545,14 @@ graph LR
 
 ### Key Performance Indicators
 
-| Metric                  | Target                 | Current Status | Measurement Method      | Business Impact              |
+| <sub>Metric</sub> | <sub>Target</sub> | <sub>Current Status</sub> | <sub>Measurement Method</sub> | <sub>Business Impact</sub> |
 | ----------------------- | ---------------------- | -------------- | ----------------------- | ---------------------------- |
-| **Initial Load Time**   | < 3 seconds            | ✅ 2.1s average | Lighthouse CI           | +25% user retention          |
-| **Tutorial Completion** | > 85% completion rate  | 🏃 Testing      | Analytics tracking      | -40% support tickets         |
-| **Bundle Size**         | < 500KB gzipped        | ✅ 495KB        | Webpack Bundle Analyzer | Faster load on slow networks |
-| **Accessibility Score** | WCAG 2.1 AA (>95)      | ✅ 98/100       | axe-core testing        | Government compliance        |
-| **Mobile Performance**  | > 90 Lighthouse score  | 🏃 Optimizing   | Mobile device testing   | +60% mobile usage            |
-| **Tutorial Engagement** | > 80% interaction rate | ✅ 87% average  | Custom analytics        | Higher learning retention    |
+| <sub>**Initial Load Time**</sub> | <sub>< 3 seconds</sub> | <sub>✅ 2.1s average</sub> | <sub>Lighthouse CI</sub> | <sub>+25% user retention</sub> |
+| <sub>**Tutorial Completion**</sub> | <sub>> 85% completion rate</sub> | <sub>🏃 Testing</sub> | <sub>Analytics tracking</sub> | <sub>-40% support tickets</sub> |
+| <sub>**Bundle Size**</sub> | <sub>< 500KB gzipped</sub> | <sub>✅ 495KB</sub> | <sub>Webpack Bundle Analyzer</sub> | <sub>Faster load on slow networks</sub> |
+| <sub>**Accessibility Score**</sub> | <sub>WCAG 2.1 AA (>95)</sub> | <sub>✅ 98/100</sub> | <sub>axe-core testing</sub> | <sub>Government compliance</sub> |
+| <sub>**Mobile Performance**</sub> | <sub>> 90 Lighthouse score</sub> | <sub>🏃 Optimizing</sub> | <sub>Mobile device testing</sub> | <sub>+60% mobile usage</sub> |
+| <sub>**Tutorial Engagement**</sub> | <sub>> 80% interaction rate</sub> | <sub>✅ 87% average</sub> | <sub>Custom analytics</sub> | <sub>Higher learning retention</sub> |
 
 ### Real-Time Performance Monitoring
 
@@ -630,14 +630,14 @@ graph LR
 
 ### Testing Strategy
 
-| Test Type               | Coverage Target            | Tools Used                  | Purpose                 | Execution Time |
+| <sub>Test Type</sub> | <sub>Coverage Target</sub> | <sub>Tools Used</sub> | <sub>Purpose</sub> | <sub>Execution Time</sub> |
 | ----------------------- | -------------------------- | --------------------------- | ----------------------- | -------------- |
-| **Unit Tests**          | >90% code coverage         | Jest, React Testing Library | Component functionality | <10 seconds    |
-| **Integration Tests**   | >80% feature coverage      | Jest, MSW (API mocking)     | Component interaction   | <30 seconds    |
-| **End-to-End Tests**    | >70% user journey coverage | Playwright, Docker          | Full user workflows     | <5 minutes     |
-| **Performance Tests**   | All critical paths         | Lighthouse CI, WebPageTest  | Load time optimization  | <2 minutes     |
-| **Accessibility Tests** | 100% compliance            | axe-core, WAVE              | Government standards    | <1 minute      |
-| **Security Tests**      | Zero vulnerabilities       | OWASP ZAP, Snyk             | Security compliance     | <10 minutes    |
+| <sub>**Unit Tests**</sub> | <sub>>90% code coverage</sub> | <sub>Jest, React Testing Library</sub> | <sub>Component functionality</sub> | <sub><10 seconds</sub> |
+| <sub>**Integration Tests**</sub> | <sub>>80% feature coverage</sub> | <sub>Jest, MSW (API mocking)</sub> | <sub>Component interaction</sub> | <sub><30 seconds</sub> |
+| <sub>**End-to-End Tests**</sub> | <sub>>70% user journey coverage</sub> | <sub>Playwright, Docker</sub> | <sub>Full user workflows</sub> | <sub><5 minutes</sub> |
+| <sub>**Performance Tests**</sub> | <sub>All critical paths</sub> | <sub>Lighthouse CI, WebPageTest</sub> | <sub>Load time optimization</sub> | <sub><2 minutes</sub> |
+| <sub>**Accessibility Tests**</sub> | <sub>100% compliance</sub> | <sub>axe-core, WAVE</sub> | <sub>Government standards</sub> | <sub><1 minute</sub> |
+| <sub>**Security Tests**</sub> | <sub>Zero vulnerabilities</sub> | <sub>OWASP ZAP, Snyk</sub> | <sub>Security compliance</sub> | <sub><10 minutes</sub> |
 
 ## 🚀 Deployment & Production
 
@@ -719,13 +719,13 @@ graph TB
 
 ### Long-term Maintenance Plan
 
-| Maintenance Area           | Frequency  | Responsibility   | Impact                 |
+| <sub>Maintenance Area</sub> | <sub>Frequency</sub> | <sub>Responsibility</sub> | <sub>Impact</sub> |
 | -------------------------- | ---------- | ---------------- | ---------------------- |
-| **Dependency Updates**     | Monthly    | Development Team | Security & performance |
-| **Performance Monitoring** | Continuous | DevOps Team      | User experience        |
-| **Security Audits**        | Quarterly  | Security Team    | Compliance             |
-| **Content Updates**        | As needed  | FBI Liaison      | Accuracy               |
-| **Feature Enhancements**   | Bi-annual  | Product Team     | User satisfaction      |
+| <sub>**Dependency Updates**</sub> | <sub>Monthly</sub> | <sub>Development Team</sub> | <sub>Security & performance</sub> |
+| <sub>**Performance Monitoring**</sub> | <sub>Continuous</sub> | <sub>DevOps Team</sub> | <sub>User experience</sub> |
+| <sub>**Security Audits**</sub> | <sub>Quarterly</sub> | <sub>Security Team</sub> | <sub>Compliance</sub> |
+| <sub>**Content Updates**</sub> | <sub>As needed</sub> | <sub>FBI Liaison</sub> | <sub>Accuracy</sub> |
+| <sub>**Feature Enhancements**</sub> | <sub>Bi-annual</sub> | <sub>Product Team</sub> | <sub>User satisfaction</sub> |
 
 ## 📝 Documentation & Resources
 
@@ -858,13 +858,13 @@ Key variables:
 
 ## 📊 Performance Targets
 
-| Metric               | Target          | Current     |
+| <sub>Metric</sub> | <sub>Target</sub> | <sub>Current</sub> |
 | -------------------- | --------------- | ----------- |
-| Bundle Size          | < 500KB gzipped | ✅ Optimized |
-| Initial Load         | < 3 seconds     | ✅ Fast      |
-| Tutorial Transitions | < 300ms         | ✅ Smooth    |
-| Mobile Performance   | > 90 Lighthouse | 🏃 Testing   |
-| Accessibility        | WCAG 2.1 AA     | ✅ Compliant |
+| <sub>Bundle Size</sub> | <sub>< 500KB gzipped</sub> | <sub>✅ Optimized</sub> |
+| <sub>Initial Load</sub> | <sub>< 3 seconds</sub> | <sub>✅ Fast</sub> |
+| <sub>Tutorial Transitions</sub> | <sub>< 300ms</sub> | <sub>✅ Smooth</sub> |
+| <sub>Mobile Performance</sub> | <sub>> 90 Lighthouse</sub> | <sub>🏃 Testing</sub> |
+| <sub>Accessibility</sub> | <sub>WCAG 2.1 AA</sub> | <sub>✅ Compliant</sub> |
 
 ## 🐛 Troubleshooting
 
